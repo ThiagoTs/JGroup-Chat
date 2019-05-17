@@ -80,7 +80,7 @@ public class Chat extends ReceiverAdapter {
                 /* obtem a mensagem lida do teclado */
                 msg = teclado.nextLine();
                 /*trata comandos do protocolo*/
-                if (msg.contains("quit"))
+                if (msg.contains("Sair"))
                     continua = false;
 
                 /* monta com pacote (Message) para que possa ser enviada */
