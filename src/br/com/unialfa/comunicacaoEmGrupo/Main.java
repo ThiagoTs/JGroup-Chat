@@ -1,5 +1,7 @@
 package br.com.unialfa.comunicacaoEmGrupo;
 
+import javax.swing.JOptionPane;
+
 /**
  * Classe Main
  *
@@ -18,6 +20,9 @@ public class Main {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception{
-        new Chat("Chat","Thiago").start();
+    	
+    	String nome ="";
+    	nome = JOptionPane.showInputDialog(nome);
+        new Chat("Chat",nome).start();
     }
 }
